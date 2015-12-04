@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical" android:background="@drawable/background">
+
+	<include layout="@layout/header" android:id="@+id/headerpage"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_alignParentTop="true" />
+
+
+
+	<ScrollView android:id="@+id/scrollView1"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:layout_above="@+id/footerpage" android:layout_below="@+id/headerpage">
+
+		<RelativeLayout android:id="@+id/personaldetail"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+			<TextView android:id="@+id/txpersonal" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="1dp"
+				android:text="Personal Detail" android:textColor="#800080"
+				android:textSize="20dp">
+			</TextView>
+
+			<TextView android:id="@+id/txfirstname"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_below="@+id/txpersonal" android:layout_marginTop="15dp"
+				android:text="FirstName" android:textColor="#0000FF">
+			</TextView>
+
+			<TextView android:id="@+id/tvfirstname"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_below="@+id/txpersonal" android:layout_marginLeft="25dp"
+				android:layout_marginTop="15dp" android:layout_toRightOf="@+id/txfirstname"
+				android:text="TextView" android:textColor="#000000">
+			</TextView>
+
+			<EditText android:id="@+id/edfirstname"
+				android:layout_width="fill_parent" android:layout_height="30dip"
+				android:layout_below="@+id/txpersonal" android:layout_marginTop="15dp"
+				android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/txfirstname"
+				android:background="@drawable/edittextbg" android:hint="first name"
+				android:visibility="gone">
+			</EditText>
+
+			<TextView android:id="@+id/txsurname" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_alignLeft="@+id/txfirstname"
+				android:layout_alignRight="@+id/txfirstname" android:layout_below="@+id/txfirstname"
+				android:layout_marginTop="20dp" android:text="SurName"
+				android:textColor="#0000FF">
+			</TextView>
+
+			<TextView android:id="@+id/tvsurname" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_alignLeft="@+id/tvfirstname"
+				android:layout_below="@+id/tvfirstname" android:layout_marginTop="20dp"
+				android:layout_toRightOf="@+id/txsurname" android:text="TextView"
+				android:textColor="#000000">
+			</TextView>
+
+			<EditText android:id="@+id/edsurname" android:layout_width="wrap_content"
+				android:layout_height="30dip" android:layout_alignLeft="@+id/edfirstname"
+				android:layout_alignRight="@+id/edfirstname" android:layout_below="@+id/tvfirstname"
+				android:layout_marginTop="20dp" android:layout_toRightOf="@+id/txsurname"
+				android:background="@drawable/edittextbg" android:hint="surname"
+				android:visibility="gone">
+			</EditText>
+
+			<TextView android:id="@+id/txemail" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_alignLeft="@+id/txfirstname"
+				android:layout_alignRight="@+id/txfirstname" android:layout_below="@+id/txsurname"
+				android:layout_marginTop="20dp" android:text="Email"
+				android:textColor="#0000FF">
+			</TextView>
+
+			<TextView android:id="@+id/tvemail" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_alignLeft="@+id/tvfirstname"
+				android:layout_below="@+id/txsurname" android:layout_marginTop="20dp"
+				android:layout_toRightOf="@+id/txemail" android:text="TextView"
+				android:textColor="#000000">
+			</TextView>
+
+			<EditText android:id="@+id/edemail" android:layout_width="wrap_content"
+				android:layout_height="30dip" android:layout_alignLeft="@+id/edfirstname"
+				android:layout_alignRight="@+id/edfirstname" android:layout_below="@+id/tvsurname"
+				android:layout_marginTop="20dp" android:layout_toRightOf="@+id/txemail"
+				android:background="@drawable/edittextbg" android:hint="email"
+				android:inputType="textEmailAddress" android:visibility="gone">
+			</EditText>
+
+			<TextView android:id="@+id/txcontact" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_alignLeft="@+id/txfirstname"
+				android:layout_alignRight="@+id/txfirstname" android:layout_below="@+id/txemail"
+				android:layout_marginTop="20dp" android:text="Contact"
+				android:textColor="#0000FF">
+			</TextView>
+
+			<TextView android:id="@+id/tvcontact" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_alignLeft="@+id/tvfirstname"
+				android:layout_below="@+id/txemail" android:layout_marginTop="20dp"
+				android:layout_toRightOf="@+id/txcontact" android:text="TextView"
+				android:textColor="#000000">
+			</TextView>
+
+			<EditText android:id="@+id/edcontact" android:layout_width="wrap_content"
+				android:layout_height="30dp" android:layout_alignLeft="@+id/edfirstname"
+				android:layout_alignRight="@+id/edfirstname" android:layout_below="@+id/tvemail"
+				android:layout_marginTop="20dp" android:layout_toRightOf="@+id/txcontact"
+				android:background="@drawable/edittextbg" android:hint="contact"
+				android:numeric="integer" android:visibility="gone">
+			</EditText>
+
+			<TextView android:id="@+id/txaddress" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_alignLeft="@+id/txfirstname"
+				android:layout_alignRight="@+id/txfirstname" android:layout_below="@+id/txcontact"
+				android:layout_marginTop="20dp" android:text="Address"
+				android:textColor="#0000FF">
+			</TextView>
+
+			<TextView android:id="@+id/tvaddress" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_alignLeft="@+id/tvfirstname"
+				android:layout_below="@+id/txcontact" android:layout_marginTop="20dp"
+				android:layout_toRightOf="@+id/txaddress" android:text="TextView"
+				android:textColor="#000000">
+			</TextView>
+
+
+
+			<EditText android:id="@+id/edaddress" android:layout_width="wrap_content"
+				android:layout_height="30dip" android:layout_alignLeft="@+id/edfirstname"
+				android:layout_alignRight="@+id/edfirstname" android:layout_below="@+id/tvcontact"
+				android:layout_marginTop="20dp" android:layout_toRightOf="@+id/txaddress"
+				android:background="@drawable/edittextbg" android:hint="Address"
+				android:numeric="integer" android:visibility="gone">
+			</EditText>
+
+
+
+			<Button android:id="@+id/passwordchange" android:layout_width="100dp"
+				android:layout_height="50dp" android:layout_below="@+id/submit"
+				android:layout_marginTop="5dp" android:background="@drawable/updatepassword"
+				android:visibility="gone" />
+
+
+			<Button android:id="@+id/submit" android:layout_width="70dp"
+				android:layout_height="50dp" android:layout_below="@+id/txaddress"
+				android:layout_marginTop="20dp" android:background="@drawable/save"
+				android:visibility="gone" />
+
+		</RelativeLayout>
+	</ScrollView>
+
+	<include android:id="@+id/footerpage" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+		layout="@layout/footer">
+	</include>
+
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/backgroundoverlay" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/IMGCakeLOgo"
+        android:layout_width="wrap_content"
+        android:layout_height="175dip"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/largelogo"
+        android:layout_marginTop="5dp" >
+    </ImageView>
+
+    <Button
+        android:id="@+id/BTNLogin"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:layout_below="@+id/ETPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login"
+      
+        android:textSize="20dip" >
+    </Button>
+
+    <Button
+        android:id="@+id/BTNRegister"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:layout_alignLeft="@+id/BTNLogin"
+        android:layout_below="@+id/BTNLogin"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/reg"
+        android:textSize="20dip" />
+
+    <EditText
+        android:id="@+id/ETUsername"
+        android:layout_width="270dip"
+        android:layout_height="40dip"
+        android:layout_below="@+id/IMGCakeLOgo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dip"
+        android:background="@drawable/edittextbg"
+        android:hint="UserName"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:text="anz" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/ETPassword"
+        android:layout_width="270dip"
+        android:layout_height="40dip"
+        android:layout_alignLeft="@+id/ETUsername"
+        android:layout_below="@+id/ETUsername"
+        android:layout_centerVertical="true"
+        android:background="@drawable/edittextbg"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dip"
+        android:text="qwe" >
+    </EditText>
+
+</RelativeLayout>
+  
+
+   

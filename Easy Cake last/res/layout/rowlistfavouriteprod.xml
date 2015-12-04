@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/relativeLayoutforfav" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/transparentbg">
+
+	<RelativeLayout android:id="@+id/dialogImageLayout"
+		android:layout_width="100dip" android:layout_height="170dip"
+		android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+
+		<ImageView android:id="@+id/imageView1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerInParent="true" android:src="@drawable/cake" />
+	</RelativeLayout>
+
+	<RelativeLayout android:id="@+id/diaProdDetailLayout"
+		android:layout_width="150dp" android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/dialogImageLayout"
+
+		android:layout_alignTop="@+id/dialogImageLayout"
+		android:layout_toRightOf="@+id/dialogImageLayout">
+
+		<TextView android:id="@+id/TVFavproductName"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+			android:layout_marginLeft="15dp" android:layout_marginTop="16dp"
+			android:text="Black Forest" android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<TextView android:id="@+id/TVFavdetails"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/TVFavproductName"
+			android:layout_below="@+id/TVFavproductName"
+			android:layout_marginTop="5dip" android:text="Sugar,Vinegar,Egg"
+			android:textAppearance="?android:attr/textAppearanceSmall" />
+
+		<TextView android:id="@+id/TVFavCostPerKilo"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/TVFavdetails" android:layout_below="@+id/TVFavdetails"
+			android:layout_marginTop="5dip" android:text="Rs.300/1K.g"
+			android:textAppearance="?android:attr/textAppearanceSmall" />
+
+		<TextView android:id="@+id/TVProductFAVBranch"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/TVFavproductName"
+			android:layout_below="@+id/TVFavCostPerKilo"
+			android:layout_marginTop="5dip" android:text="Cake Walk,Indiranagar"
+			android:textAppearance="?android:attr/textAppearanceSmall" />
+	</RelativeLayout>
+
+	<RelativeLayout android:id="@+id/RLbutton"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/diaProdDetailLayout"
+		android:layout_alignTop="@+id/diaProdDetailLayout"
+		android:layout_alignBottom="@+id/diaProdDetailLayout"
+		android:layout_alignParentRight="true">
+		
+		<Button android:id="@+id/BTAddFav" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignParentTop="true"
+			android:layout_alignParentRight="true" android:layout_marginTop="20dip"
+			android:background="@drawable/cart"/>
+			
+		<Button android:id="@+id/deleteFavBT" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignParentRight="true"
+			android:layout_alignParentBottom="true" android:layout_marginBottom="20dip"
+			android:background="@drawable/bin" />
+
+
+
+
+
+
+	</RelativeLayout>
+
+</RelativeLayout>

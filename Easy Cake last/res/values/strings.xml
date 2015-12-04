@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, EasyCakeActivity!</string>
+    <string name="app_name">EasyCake</string>
+    <color name="Red">#FF0000</color>
+    <color name="LiteGry">#C0C0C0</color>
+    <color name="Black">#000000</color>
+    <color name="RoyalBlue">#0000FF</color>
+    <color name="White">#FFFFFF</color>
+    
+</resources>

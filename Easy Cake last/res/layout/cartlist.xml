@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:background="@drawable/background">
+	
+<include layout="@layout/header" android:id="@+id/headerpage"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_alignParentTop="true"
+		 />
+		 
+		<!--  <Button android:text="place order" android:id="@+id/BTConformOrder"
+		android:layout_width="160dip" android:layout_height="35dip"
+		 android:layout_centerHorizontal="TRUE"
+		android:layout_below="@+id/headerpage"></Button> -->
+		
+	
+	<ListView android:id="@android:id/list" android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:layout_below="@+id/headerpage"
+		android:layout_marginTop="5dip" android:layout_above="@+id/footerpage"
+		></ListView>
+	
+		<include layout="@layout/footer" android:id="@+id/footerpage"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_alignParentBottom="true" />
+	
+
+</RelativeLayout>
+    

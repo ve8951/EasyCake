@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:background="@drawable/background">
+
+	<ScrollView android:layout_width="match_parent" android:id="@+id/scrollView1"
+		android:layout_height="match_parent" android:layout_above="@+id/relativeLayout2"
+		android:layout_below="@+id/relativeLayout1">
+
+
+		<RelativeLayout android:id="@+id/relativeLayout2"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+			<ImageView android:layout_width="60dip"
+				android:layout_height="60dip" android:id="@+id/REGimagelogo"
+				android:src="@drawable/logo" android:layout_alignParentTop="true"
+				android:layout_alignParentLeft="true"></ImageView>
+
+			<EditText android:layout_width="match_parent" android:hint="Name..."
+				android:layout_height="30dip" android:layout_marginRight="30dp"
+				android:id="@+id/EDREGname" android:layout_below="@+id/REGimagelogo"
+				android:layout_marginLeft="20dp" android:layout_marginTop="15dp"
+				 android:background="@drawable/edittextbg" />
+
+
+			<EditText android:layout_width="wrap_content" android:hint="LastName..."
+				android:layout_height="30dip" android:id="@+id/EDREGlastname"
+				android:layout_below="@+id/EDREGname" android:layout_alignLeft="@+id/EDREGname"
+				android:layout_marginTop="15dp" android:layout_alignRight="@+id/EDREGname"
+				 android:background="@drawable/edittextbg"></EditText>
+
+			<EditText android:layout_width="wrap_content" android:hint="Email..."
+				android:layout_height="30dip" android:id="@+id/EDREGemail"
+				android:layout_below="@+id/EDREGlastname" android:layout_alignLeft="@+id/EDREGname"
+				android:layout_marginTop="15dp" android:layout_alignRight="@+id/EDREGname"
+				 android:background="@drawable/edittextbg"></EditText>
+
+			<EditText android:layout_width="wrap_content" android:hint="Contact..."
+				android:layout_height="30dip" android:id="@+id/EDREGcontact"
+				android:inputType="number" android:maxLength="10"
+				android:layout_below="@+id/EDREGemail" android:layout_alignLeft="@+id/EDREGname"
+				android:layout_marginTop="15dp" android:layout_alignRight="@+id/EDREGname"
+				 android:background="@drawable/edittextbg"></EditText>
+
+			<EditText android:layout_width="120dip" android:hint="UserName..."
+				android:layout_height="30dip" android:id="@+id/EDREGusername"
+				android:layout_below="@+id/EDREGcontact" android:layout_alignLeft="@+id/EDREGname"
+				android:layout_marginTop="15dp"  android:background="@drawable/edittextbg"
+				android:layout_toLeftOf="@+id/regnamecheck"></EditText>
+
+			<EditText android:layout_width="wrap_content" android:hint="Password..."
+				android:layout_height="30dip" android:id="@+id/EDREGpassword"
+				android:layout_below="@+id/EDREGusername" android:layout_alignLeft="@+id/EDREGname"
+				android:layout_marginTop="15dp" android:layout_alignRight="@+id/EDREGname"
+				android:password="true"  android:background="@drawable/edittextbg"></EditText>
+
+			<EditText android:layout_width="wrap_content" android:hint="Cnfpassword..."
+				android:layout_height="30dip" android:id="@+id/EDREGcnfpassword"
+				android:layout_below="@+id/EDREGpassword" android:layout_alignLeft="@+id/EDREGname"
+				android:layout_marginTop="15dp" android:layout_alignRight="@+id/EDREGname"
+				 android:background="@drawable/edittextbg" android:password="true"></EditText>
+
+			<Button android:layout_width="70dp" android:layout_height="50dp"
+				android:background="@drawable/submit" android:layout_centerInParent="true"
+				android:id="@+id/BTregsubmit" android:layout_below="@+id/EDREGcnfpassword"
+				android:layout_marginTop="15dp"></Button>
+
+			<ImageView android:layout_height="wrap_content"
+				android:src="@drawable/warning" android:id="@+id/firstNameErrIV"
+				android:layout_width="wrap_content" android:layout_above="@+id/EDREGlastname"
+				android:layout_alignParentRight="true" android:layout_marginRight="5dp"
+				android:visibility="gone" />
+
+
+			<ImageView android:layout_height="wrap_content"
+				android:src="@drawable/warning" android:id="@+id/lastNameErrIV"
+				android:layout_width="wrap_content" android:layout_alignBottom="@+id/EDREGlastname"
+				android:layout_alignParentRight="true" android:layout_marginRight="5dp"
+				android:visibility="gone" />
+
+
+			<Button android:layout_height="30dp" android:layout_width="40dp"
+				android:background="@drawable/ques" android:id="@+id/regnamecheck"
+				android:layout_alignTop="@+id/EDREGusername"
+				android:layout_alignRight="@+id/EDREGpassword"></Button>
+			<ImageView android:layout_height="wrap_content"
+				android:src="@drawable/warning" android:id="@+id/usernameErrIV"
+				android:layout_width="wrap_content" android:layout_alignBottom="@+id/EDREGusername"
+				android:layout_alignLeft="@+id/contactErrIV" android:visibility="gone"></ImageView>
+			<ImageView android:id="@+id/emailErrIV" android:src="@drawable/warning"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignTop="@+id/EDREGemail" android:layout_alignLeft="@+id/lastNameErrIV"
+				android:visibility="gone"></ImageView>
+			<ImageView android:id="@+id/contactErrIV" android:src="@drawable/warning"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/EDREGcontact"
+				android:layout_alignLeft="@+id/emailErrIV" android:visibility="gone"></ImageView>
+			<ImageView android:id="@+id/passwordErrIV" android:src="@drawable/warning"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignTop="@+id/EDREGpassword"
+				android:layout_alignLeft="@+id/usernameErrIV" android:visibility="gone"></ImageView>
+			<ImageView android:id="@+id/cnfPasswordErrIV" android:src="@drawable/warning"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/EDREGcnfpassword"
+				android:layout_alignLeft="@+id/passwordErrIV" android:visibility="gone"></ImageView>
+
+
+		</RelativeLayout>
+
+	</ScrollView>
+
+
+</RelativeLayout>

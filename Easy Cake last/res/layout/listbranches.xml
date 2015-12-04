@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical" android:background="@drawable/background">
+
+	<include layout="@layout/header" android:id="@+id/headerpage"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_alignParentTop="true" />
+
+	<RelativeLayout android:layout_below="@+id/headerpage"
+		android:id="@+id/RLTextviewBranchs" android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:background="#130">
+
+		<TextView android:id="@+id/storeNametextView"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="Small Text" android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	</RelativeLayout>
+
+	<RelativeLayout android:layout_below="@+id/RLTextviewBranchs"
+		android:id="@+id/RLListViewBranches" android:layout_width="match_parent"
+		android:layout_height="match_parent" android:orientation="vertical">
+
+		<ListView android:id="@android:id/list" android:layout_above="@+id/footerpage"
+			android:layout_width="match_parent" android:layout_height="match_parent"
+			android:background="@drawable/transparentbg" />
+
+	</RelativeLayout>
+
+	<include layout="@layout/footer" android:id="@+id/footerpage"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

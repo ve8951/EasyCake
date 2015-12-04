@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="wrap_content" android:background="@drawable/footerbg">
+	
+	<Button android:layout_height="60dp"
+		android:layout_width="60dp" android:id="@+id/home"
+		android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+		android:onClick="easyGo" android:background="@drawable/home"></Button>
+		
+	<Button android:layout_height="60dp"
+		android:layout_width="60dp" android:id="@+id/update"
+		 android:layout_marginLeft="20dp" android:layout_centerVertical="true"
+		android:background="@drawable/update"		
+		android:layout_toRightOf="@+id/home"
+		android:onClick="easyGo"></Button>
+		
+	<Button android:layout_height="60dp"
+		android:layout_width="60dp" android:id="@+id/search"
+		 android:layout_toRightOf="@+id/update" android:layout_centerVertical="true"
+		android:onClick="easyGo" android:background="@drawable/search"	
+		android:layout_marginLeft="20dp"></Button>
+		
+	<Button android:layout_height="60dp"
+		android:layout_width="60dp" android:id="@+id/logout"
+		android:background="@drawable/logout"	android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		android:onClick="easyGo"
+		></Button>
+
+</RelativeLayout>

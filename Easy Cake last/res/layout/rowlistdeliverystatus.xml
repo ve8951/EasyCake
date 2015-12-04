@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:background="@drawable/transparentbg">
+
+	<RelativeLayout android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" android:id="@+id/carticonlayout">
+		
+	<TextView
+	    android:id="@+id/cartdateLY"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"	   
+	    android:text="Date of creation" >
+	</TextView>
+	
+	<TextView android:layout_width="wrap_content" android:id="@+id/carttimeLY"
+			android:text="Time of creation" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" 	android:layout_below="@+id/cartdateLY"></TextView>
+	
+	<TextView android:layout_width="wrap_content" android:id="@+id/cartstatusLY"
+			android:text="Status" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" 	android:layout_below="@+id/carttimeLY"></TextView>
+	
+	<TextView android:layout_width="wrap_content" android:id="@+id/cartpriceLY"
+			android:text="Cart price" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" 	android:layout_below="@+id/cartstatusLY"></TextView>
+
+
+	</RelativeLayout>
+
+
+
+	<RelativeLayout android:layout_width="wrap_content" android:layout_alignTop="@+id/carticonlayout"
+	
+		android:layout_height="wrap_content" android:layout_toRightOf="@+id/carticonlayout"
+		android:id="@+id/cartdetaillayout" android:layout_marginLeft="30dip">
+
+
+		<TextView android:layout_width="wrap_content" android:id="@+id/cartdateTV"
+			android:text="date" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" ></TextView>
+		
+		    <TextView android:layout_width="wrap_content" android:id="@+id/carttimeTV"
+			android:text="Time" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_below="@+id/cartdateTV"></TextView>
+		    
+		        <TextView android:layout_width="wrap_content" android:id="@+id/cartproductnoTV"
+			android:text="status" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_below="@+id/carttimeTV"></TextView>
+		         
+		         
+		         <TextView android:layout_width="wrap_content" android:id="@+id/cartpriceTV"			
+			android:text="cart price" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_below="@+id/cartproductnoTV"></TextView>
+
+
+		
+
+	</RelativeLayout>
+
+	
+
+</RelativeLayout>

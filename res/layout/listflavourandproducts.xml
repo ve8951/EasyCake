@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/relativeLayoutflavourspinner" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:background="@drawable/background">
+
+	<include layout="@layout/header" android:id="@+id/headerpage"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_alignParentTop="true" 
+		/>
+
+
+	<TextView android:id="@+id/storeInflavour" android:layout_below="@+id/headerpage"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true" android:layout_marginTop="5dp"
+		android:text="Small Text" android:textAppearance="?android:attr/textAppearanceSmall" 
+		/>
+
+
+
+	<RelativeLayout android:id="@+id/relativeLayout1"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_below="@+id/storeInflavour">
+
+		<Spinner android:id="@+id/spinner1" android:layout_width="fill_parent"
+			android:layout_height="45dip" android:layout_marginTop="5dip" />
+
+	</RelativeLayout>
+
+
+
+
+	<RelativeLayout android:id="@+id/relativeLayoutproducts" android:layout_above="@+id/footerpage"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:layout_alignParentLeft="true" android:layout_below="@+id/relativeLayout1"
+		>
+
+		<ListView android:layout_marginTop="15dip"
+			android:layout_height="match_parent" android:layout_width="match_parent"
+			android:id="@android:id/list" android:background="@drawable/transparentbg"></ListView>
+
+
+	</RelativeLayout>
+	<include android:layout_height="wrap_content" layout="@layout/footer" android:id="@+id/footerpage" android:layout_width="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"></include>
+
+</RelativeLayout>

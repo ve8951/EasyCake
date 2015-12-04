@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:background="@drawable/transparentbg" >
+
+	<RelativeLayout
+	    android:id="@+id/productsiconlayout"
+	    android:layout_width="100dp"
+	    android:layout_height="90dip"
+	    >
+
+		<ImageView android:layout_height="wrap_content" android:layout_centerInParent="true"
+			android:layout_width="70dip" android:id="@+id/producticon"
+			android:src="@drawable/icon" android:layout_alignParentLeft="true"
+			android:layout_marginTop="30dip" />
+
+	</RelativeLayout>
+
+	<RelativeLayout
+	    android:id="@+id/productdetaillayout"
+	    android:layout_width="160dip"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/productsiconlayout"
+	    android:layout_alignTop="@+id/productsiconlayout"
+	    android:layout_toRightOf="@+id/productsiconlayout" >
+
+		<TextView android:layout_width="wrap_content" android:id="@+id/productname"
+			android:text="Product Name" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" ></TextView>
+		<TextView android:layout_height="wrap_content" android:id="@+id/ingridientTV"
+			android:text="Ingredient" android:layout_width="wrap_content"
+			android:maxLength="20" android:layout_below="@+id/productname"
+			android:layout_alignParentLeft="true" android:singleLine="true"/>
+		
+		
+		<TextView android:layout_height="wrap_content" android:id="@+id/weightTV"
+			android:text="Weight" android:layout_width="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_below="@+id/ingridientTV"></TextView>
+
+
+		<TextView android:layout_height="wrap_content" android:id="@+id/storenameinprodlistTV"
+			android:text="Store name" android:layout_width="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_below="@+id/weightTV"
+			android:singleLine="true"></TextView>
+		
+		    	<TextView android:layout_height="wrap_content" android:id="@+id/orderedQuantity"
+			android:text="quantity" android:layout_width="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_below="@+id/storenameinprodlistTV"
+			android:singleLine="true" android:visibility="gone"></TextView>
+
+
+
+	</RelativeLayout>
+
+	<RelativeLayout
+	    android:id="@+id/RLForButtons"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/productdetaillayout"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true" >
+
+	    <Button
+	        android:id="@+id/addToCartBT"
+	        android:layout_width="wrap_content"
+	        android:layout_height="40dp"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentLeft="true"
+	        android:background="@drawable/cart"/>
+
+	    <Button
+	        android:id="@+id/addToFavBT"
+	        android:background="@drawable/addtofav"
+	        android:layout_width="wrap_content"
+	        android:layout_height="40dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginTop="5dip"
+	       
+	        android:layout_alignRight="@+id/addToCartBT"
+	          />
+
+	</RelativeLayout>
+
+</RelativeLayout>

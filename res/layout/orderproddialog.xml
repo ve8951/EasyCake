@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/relativeLayoutfordialog" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<RelativeLayout android:id="@+id/dialogImageLayout"
+		android:layout_width="100dip" android:layout_height="200dip"
+		android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+
+		<ImageView android:id="@+id/imageView1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_centerInParent="true" android:src="@drawable/cake" />
+	</RelativeLayout>
+
+	<RelativeLayout android:id="@+id/diaProdDetailLayout"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/dialogImageLayout"
+		android:layout_alignParentRight="true" android:layout_alignTop="@+id/dialogImageLayout"
+		android:layout_toRightOf="@+id/dialogImageLayout">
+
+		<TextView android:id="@+id/TVproductName"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+			android:layout_marginLeft="15dp" android:layout_marginTop="16dp"
+			android:text="Black Forest" android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<TextView android:id="@+id/TVdetails" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignLeft="@+id/TVproductName"
+			android:layout_below="@+id/TVproductName" android:layout_marginTop="5dp"
+			android:text="Sugar,Vinegar,Egg" android:textAppearance="?android:attr/textAppearanceSmall" />
+
+		<TextView android:id="@+id/TVCostPerKilo"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/TVdetails"
+			android:layout_centerVertical="true" android:layout_marginTop="5dp"
+			android:text="Rs.300/1K.g" android:textAppearance="?android:attr/textAppearanceSmall" />
+
+		<Button android:id="@+id/BTDecrease" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignLeft="@+id/TVCostPerKilo"
+			android:layout_below="@+id/TVCostPerKilo" android:layout_marginTop="5dp"
+			android:text="-" />
+
+		<EditText android:id="@+id/EDUserQuantity"
+			android:layout_width="50dp" android:layout_height="wrap_content"
+			android:layout_alignTop="@+id/BTDecrease" android:layout_toRightOf="@+id/BTDecrease"
+			android:inputType="number" android:maxLength="2" android:text="1"
+			android:textSize="15dip" />
+
+		<Button android:id="@+id/BTincrease" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignTop="@+id/EDUserQuantity"
+			android:layout_toRightOf="@+id/EDUserQuantity" android:text="+" />
+
+		<TextView android:id="@+id/textView4" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_alignLeft="@+id/BTDecrease"
+			android:layout_below="@+id/BTDecrease" android:layout_marginLeft="20dp"
+			android:text="(QUANTITY)" android:layout_marginTop="10dp" />
+	</RelativeLayout>
+
+	<RelativeLayout android:id="@+id/dialogTotalPriceLayout"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:layout_below="@+id/dialogImageLayout" android:background="#130"
+		android:layout_marginTop="10dp">
+
+		<TextView android:id="@+id/TVTotalPrice"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentRight="true" android:layout_alignParentTop="true"
+			android:layout_marginRight="29dp" android:text="Rs.1000.00"
+			android:textAppearance="?android:attr/textAppearanceMedium" />
+	</RelativeLayout>
+
+</RelativeLayout>

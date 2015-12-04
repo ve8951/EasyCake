@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/linearLayout1"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/background">
+
+	<include layout="@layout/header" android:id="@+id/headerpage"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_alignParentTop="true" />
+
+
+	<RelativeLayout android:layout_height="wrap_content"
+		android:layout_below="@+id/headerpage" android:layout_width="wrap_content"
+		android:id="@+id/relativeLayout1">
+		<Spinner android:id="@+id/city" android:layout_width="match_parent"
+	android:layout_height="45dip" />
+	</RelativeLayout>
+
+	<RelativeLayout android:layout_height="match_parent"
+		android:layout_width="wrap_content" android:id="@+id/relativeLayout2"
+		android:layout_below="@+id/relativeLayout1">
+
+		<ListView android:id="@android:id/list"
+			android:layout_marginTop="5dip" android:layout_height="match_parent"
+			android:background="@drawable/transparentbg"
+			android:layout_width="match_parent" android:layout_above="@+id/footerpage"></ListView>
+	</RelativeLayout>
+
+	<include layout="@layout/footer" android:id="@+id/footerpage"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>
+

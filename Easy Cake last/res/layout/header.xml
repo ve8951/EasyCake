@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/headerbg" android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<ImageView android:id="@+id/easycake_image"
+		android:layout_alignParentTop="true" android:layout_width="wrap_content"
+		android:layout_alignParentLeft="true" android:layout_height="wrap_content"
+		android:background="@drawable/smalllogo" />
+
+	<Button android:id="@+id/shopping" android:layout_width="wrap_content"
+		android:textColor="@color/White" android:layout_height="wrap_content"
+		android:layout_alignParentRight="true" android:text="4 Items \n Rs1000.00"
+		android:background="@drawable/cartbuttonbg" android:onClick="easyGo"
+		android:textSize="12dp" />
+
+
+	<TextView android:layout_width="wrap_content" android:text="Welcome XYZ"
+		android:layout_centerVertical="true" android:id="@+id/welcomeuser"
+		android:layout_height="wrap_content" android:textColor="#FFFFFF"
+		android:layout_alignTop="@+id/textView1" android:layout_toRightOf="@+id/textView1"
+		android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+	
+	

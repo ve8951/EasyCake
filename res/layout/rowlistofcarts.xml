@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:background="@drawable/transparentbg">
+
+	<RelativeLayout android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" android:id="@+id/carticonlayout">
+		
+	<TextView android:layout_width="wrap_content" android:id="@+id/cartdateLY"
+			android:text="Date of creation" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:paddingTop="50dip"></TextView>
+	<TextView android:layout_width="wrap_content" android:id="@+id/carttimeLY"
+			android:text="Time of creation" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:paddingTop="70dip"></TextView>
+	<TextView android:layout_width="wrap_content" android:id="@+id/cartstatusLY"
+			android:text="Status" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:paddingTop="90dip"></TextView>
+	<TextView android:layout_width="wrap_content" android:id="@+id/cartpriceLY"
+			android:text="Cart price" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:paddingTop="110dip"></TextView>
+
+
+	</RelativeLayout>
+
+
+
+	<RelativeLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_toRightOf="@+id/carticonlayout"
+		android:id="@+id/cartdetaillayout" android:layout_marginLeft="30dip">
+
+
+		<TextView android:layout_width="wrap_content" android:id="@+id/cartdateTV"
+			android:text="date" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:paddingTop="50dip"></TextView>
+		
+		    <TextView android:layout_width="wrap_content" android:id="@+id/carttimeTV"
+			android:text="Time" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:paddingTop="70dip"></TextView>
+		    
+		        <TextView android:layout_width="wrap_content" android:id="@+id/cartproductnoTV"
+			android:text="status" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:paddingTop="90dip"></TextView>
+		         <TextView android:layout_width="wrap_content" android:id="@+id/cartpriceTV"
+			android:text="cart price" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:paddingTop="110dip"></TextView>
+
+
+		
+
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:id="@+id/cartbuttonlayout"
+			android:layout_toRightOf="@+id/productdetaillayout">
+			
+		</RelativeLayout>
+
+	
+
+</RelativeLayout>
